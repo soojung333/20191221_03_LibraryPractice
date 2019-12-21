@@ -44,6 +44,7 @@ class MainActivity : BaseActivity() {
             TedPermission.with(mContext)
                 .setPermissionListener(permissionListener)
                 .setDeniedMessage("권한 설정이 필요합니다")
+                .setRationaleMessage("바로 전화를 걸기 위해 필요합니다")
                 .setPermissions(Manifest.permission.CALL_PHONE)  // Ctrl + Alt + o = 쓸데없이 임포트 된 클래스 제거
                 .check()
 
